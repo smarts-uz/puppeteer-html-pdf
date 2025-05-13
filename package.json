@@ -10,7 +10,11 @@
     "lib": "lib"
   },
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "prisma": "npx prisma db pull && npx prisma generate",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
   },
   "repository": {
     "type": "git",
@@ -38,7 +42,13 @@
   },
   "homepage": "https://github.com/ultimateakash/puppeteer-html-pdf#readme",
   "dependencies": {
-    "puppeteer": "^22.7.1"
+    "@prisma/client": "^6.7.0",
+    "handlebars": "^4.7.8",
+    "mariadb": "^3.4.2",
+    "next": "^14.1.0",
+    "puppeteer": "^22.7.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "jest": "^29.7.0"
