@@ -473,6 +473,7 @@ model wp_users {
   is_active              Int?      @default(0) @db.TinyInt
   order_count            Int?      @default(0)
   active_subscription_id BigInt?
+  blacklist_reason       String?   @db.Text
   created_by             Int?
   updated_by             Int?
   deleted_by             Int?
